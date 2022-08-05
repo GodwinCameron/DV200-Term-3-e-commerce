@@ -60,6 +60,20 @@ body {
 
 
 /* To be redone after bootstrap setup */
+.login-background{
+  width: 100%;
+  height: 100vh;
+  background-image: url(./assets/images/background.jpeg);
+  background-size: 100%;
+  background-position: center -80px;
+  background-repeat: no-repeat;
+}
+.login-background-filter{
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, rgba(9, 16, 31,1) 0%, rgba(9, 16, 31,1) 15%, rgba(9, 16, 31,0.43883490896358546) 100%);
+  padding: 70px;
+}
 .main-login-content{
   background-color: rgb(18, 30, 56);
   width: 600px;
@@ -107,7 +121,19 @@ body {
 
 .main{
   width: 100%;
-  height: 400px;
+  height: 300px;
+  text-align: center;
+  background-image: url(./assets/images/SummonersRift.jpeg);
+  background-size: 100%;
+  background-position: center -100px;
+  background-repeat: no-repeat;
+}
+.main-background-filter{
+  width: 100%;
+  height: 100%;
+  background: rgb(9, 16, 31);
+  background: linear-gradient(0deg, rgba(9, 16, 31,1) 0%, rgba(9, 16, 31,1) 50%, rgba(0,0,0,0.43) 100%);
+  padding-top: 100px;
 }
 .page-content{
   overflow: hidden;
@@ -117,13 +143,14 @@ body {
   height: 470px;
 }
 .main-card{
-  margin-left: 40px;
-  height: 350px;
-  width: 250px;
+  height: 300px;
+  width: 200px;
   border-style: solid;
   border-width: 1px;
   border-color: rgb(110, 96, 24);
   float: left;
+  padding: 10px;
+  color: white;
 }
 .main-card:hover{
   box-shadow: 1px -1px 75px 2px rgba(83, 144, 218, 0.75);
@@ -132,6 +159,25 @@ body {
 .main-card:active{
   background-color: rgba(83, 144, 218, 0.389);
   border-width: 4px;
+}
+.card-product-image{
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(110, 96, 24);
+  height: 70%;
+  background-image: url(./assets/images/example.jpeg);
+  background-size: 150%;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 10px;
+}
+.card-product-name{
+  font-size: 12px;
+}
+.card-product-stock{
+  margin-top: -15px;
+  font-size: 10px;
+  color: greenyellow;
 }
 
 
@@ -153,9 +199,13 @@ body {
   height: 100%;
   margin-left: 40px;
   border-style: solid;
-  border-width: 1px;
+  border-width: 3px;
   border-color: rgb(110, 96, 24);
   float: left;
+  background-image: url(./assets/images/example.jpeg);
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 .product-info-section{
   width: 900px;
@@ -195,4 +245,26 @@ body {
 .product-quantity-plus{
   float: right;
   margin-top: -61px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.heading-text{
+  color: white;
+}
+.sub-heading-text{
+  color: rgb(195, 168, 35);
+  font-size: 18px;
 }

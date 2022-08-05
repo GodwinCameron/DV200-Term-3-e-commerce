@@ -5,20 +5,24 @@ import { Link } from "react-router-dom";
 import Landing from "./Landing";
 
 
-const Login = () =>{
-    return(
+const Login = () => {
+    return (
         <>
-        <div className="main-login-content">
-            <div>
-                <div className="login-forum">
-                    <div className="login-input-area">
-                        <input id="username" className="login-input login-name" placeholder="Username"></input>
-                        <input type='password' id="password" className="login-input login-name" placeholder="Pasword"></input>
+            <div className="login-background">
+                <div className="login-background-filter">
+                    <div className="main-login-content">
+                        <div>
+                            <div className="login-forum">
+                                <div className="login-input-area">
+                                    <input id="username" className="login-input login-name" placeholder="Username"></input>
+                                    <input type='password' id="password" className="login-input login-name" placeholder="Pasword"></input>
+                                </div>
+                            </div>
+                            <Link to='/'><div className="login-button">LOGIN</div></Link>
+                        </div>
                     </div>
                 </div>
-                <Link to='/Landing'><div className="login-button">LOGIN</div></Link>
             </div>
-        </div>
         </>
     );
 }
