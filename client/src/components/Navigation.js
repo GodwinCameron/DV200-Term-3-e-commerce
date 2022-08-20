@@ -6,8 +6,8 @@ const Navigation = () =>{
     <div className="main-navigation-bar">
         <div className="nav-logo"></div>
         <Link to='/Login'><div className="nav-icon"></div></Link>
-        <div className="nav-icon"></div>
-        <div className="nav-icon"></div>
+        <Link to='/Store'><div className="nav-icon"></div></Link>
+        <Link to='/'><div className="nav-icon"></div></Link>
     </div>
     </>)
 }

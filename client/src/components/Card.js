@@ -3,6 +3,7 @@ import { Col, Container, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 const Card = () => {
+
     return (<>
         <Link to='/IndividualProduct'>
             <div className="main-card">
@@ -11,7 +12,10 @@ const Card = () => {
                     <div className="card-block-style-right-top-tip"></div>
                     <div className="card-block-style-right"></div>
                     <div className="card-block-style-right-bottom-tip"></div>
-                    <div className="card-product-image"></div>
+                    <div className="card-product-image">
+                        <div className="card-product-style"></div>
+                        <div className="card-product-style-bottom"></div>
+                    </div>
                     <div className="card-block-style-left-top-tip"></div>
                     <div className="card-block-style-left"></div>
                     <div className="card-block-style-left-bottom-tip"></div>

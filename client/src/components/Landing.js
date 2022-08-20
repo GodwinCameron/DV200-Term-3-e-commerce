@@ -14,35 +14,30 @@ const Landing = () => {
                         <h4 className="sub-heading-text">All the League of Legends merch you could ever ask for, all in one place!</h4>
                     </div>
                 </div>
-                <Container>
-                <h5 className="heading-text">New Items:</h5>
-                    <Row>
-                        <Col md={2}>
-                            <Card/>
-                        </Col>
-                        <Col md={2}>
-                            <Card/>
-                        </Col>
-                        <Col md={2}>
-                            <Card/>
-                        </Col>
-                        <Col md={2}>
-                            <Card/>
-                        </Col> 
-                        <Col md={2}>
-                            <Card/>
-                        </Col> 
-                        <Col md={2}>
-                            <Card/>
-                        </Col>                      
-                    </Row>
-                </Container>
+                <h5 className="heading-text text-postioning">New Items:</h5>
+                <div className="scroll-horizontal">
+                    <Card/>
+                    <Card/>
+                    <Card/>
+                    <Card/>
+                    <Card/>
+                    <Card/>
+                    <Card/>
+                    <Card/>
+                    <Card/>
+                    <Card/>
+                    <Card/>
+                    <Card/>
+                    <Card/>
+
+                </div>
                 <br/>
                 <br/>
                 <br/>
                 <Container>
                 <h5 className="heading-text">Items On Sale:</h5>
-                    <Row>
+                <br/>
+                    <Row className="scroll-horizontal">
                         <Col md={2}>
                             <Card/>
                         </Col>
@@ -63,15 +58,7 @@ const Landing = () => {
                         </Col>                      
                     </Row>
                 </Container>
-                {/* <div className="card-holder">
-                    <Card/>
-                    <Card/>
-                    <Card/>
-                    <Card/>
-                    <Card/>
-                    <Card/>
-                    <Card/>
-                </div> */}
+
             </div>
         </>
     )

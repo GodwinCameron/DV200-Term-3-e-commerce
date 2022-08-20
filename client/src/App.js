@@ -5,6 +5,7 @@ import { Route, Routes } from 'react-router-dom';
 import Landing from './components/Landing';
 import IndividualProduct from './components/IndividualProduct';
 import { RouterSetup } from './components/RouterSetup';
+import Store from './components/Store';
 
 
 
@@ -16,6 +17,7 @@ function App() {
       <Route path='/' element={<Landing/>}/>
       <Route path='/Login' element={<Login/>}/>
       <Route path='/IndividualProduct' element={<IndividualProduct/>}/>
+      <Route path='/Store' element={<Store/>}/>
     </Routes>
     <RouterSetup/>
     </>
