@@ -6,7 +6,7 @@ import Landing from './components/Landing';
 import IndividualProduct from './components/IndividualProduct';
 import { RouterSetup } from './components/RouterSetup';
 import Store from './components/Store';
-
+import Secret from './components/Secret';
 
 
 
@@ -18,6 +18,7 @@ function App() {
       <Route path='/Login' element={<Login/>}/>
       <Route path='/IndividualProduct' element={<IndividualProduct/>}/>
       <Route path='/Store' element={<Store/>}/>
+      <Route path='/Secret' element={<Secret/>}/>
     </Routes>
     <RouterSetup/>
     </>

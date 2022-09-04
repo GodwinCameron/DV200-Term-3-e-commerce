@@ -132,9 +132,11 @@ router.patch('/api/updateclient/:id', async (req, res) =>{
 
 router.post('/api/addorder', (req, res) =>{
     const newOrder = new orderSchema({
-        clientInfo: {clientName: req.body.clientName},
+        clientInfo: {clientName: req.body.clientInfo.clientName},
         productName: req.body.productName,
-        price: req.body.price
+        productId: req.body.productId,
+        price: req.body.price,
+        amount: req.body.amount
     });
     // .save(); runs to db
     newOrder.save()
